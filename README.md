@@ -20,6 +20,7 @@ These rules are so we can keep a clean project and know where everything is/shou
 
 If you think your code is complex and hard to understand for other programmers, please comment it appropriately.
 
+Don't commit in large chunks. If you're an artist, commit and push when you've finished modelling/drawing something for the game. If you're a programmer, commit and push if you've made any changes to the codebase.
 
 
 
