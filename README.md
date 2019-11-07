@@ -16,7 +16,7 @@ Settings should contain only stuff such as the profile for the post-processing
 
 These rules are so we can keep a clean project and know where everything is/should be.
 
-##Other rules
+## Other rules
 
 If you think your code is complex and hard to understand for other programmers, please comment it appropriately.
 
