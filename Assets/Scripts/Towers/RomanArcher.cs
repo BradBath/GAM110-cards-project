@@ -4,12 +4,18 @@ using UnityEngine;
 using Game.Abstract;
 public class RomanArcher : Tower
 {
-    
+
     /*ToDo list:
      * Create a menu system for towers.
      * menu system will show stats for towers (damage, firing speed) and upgrading 
      * menus can be pinned (meaning that they will stay in place and can be interacted with) but also have a sort-of preview on hover which will disappear when the mouse stops hovering the object.
     */
+
+    private void Start()
+    {
+        Name = "Roman Archer"; //Set the name of the tower so the UI windows display the right name. There might be a better way to do this.
+    }
+
     public override void MouseDown()
     {
         //Pin upgrade menu so you can interact with it

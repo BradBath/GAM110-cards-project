@@ -12,5 +12,8 @@ namespace Game.Abstract
         public abstract void MouseHoverOff();
         public abstract void MouseHoverOn();
         public abstract void MouseUp();
+
+        public bool showingWindow = false;
+        public string Name;
     }
 }
