@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Mouse.cs" />
     <Compile Include="Assets\Scripts\PathPoints.cs" />
     <Compile Include="Assets\Scripts\PathPoints2.cs" />
+    <Compile Include="Assets\Scripts\Towers\Catapult.cs" />
     <Compile Include="Assets\Scripts\Towers\RomanArcher.cs" />
     <Compile Include="Assets\Scripts\Window.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
