@@ -42,6 +42,7 @@ namespace Game
             RaycastHit hit;
             if (Physics.Raycast(mouseRay, out hit))
             {
+                //I just realized that this pretty much makes the MouseHover, and ectera, functions inside Tower.cs redundant. Refactor, maybe?
                 if (hit.transform && hit.transform.GetComponent<Tower>())
                 {
                     Tower towerController = hit.transform.GetComponent<Tower>();
