@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnemySpawn : MonoBehaviour
 {
-    public GameObject[] enemyPrefabs;
-    public Transform[] spawnPoints;
+    public GameObject enemyPrefab;
+    public Transform spawnPoint;
 
     public float timeBetweenEnemies = 5f;
     private float countdown = 2f;
@@ -17,26 +17,15 @@ public class EnemySpawn : MonoBehaviour
     {
         if (countdown <= 0f)
         {
-            SpawnEnemy();
+            SpawnCharacter();
             countdown = timeBetweenEnemies;
         }
         countdown -= Time.deltaTime;
-    }
-
-    void SpawnEnemy ()
-    {
-        for (int i = 0; i < wavenumber; i++)
-        {
-            SpawnCharacter();
-        }
-        wavenumber++;
     }
        
     //<3 From Christopher with Love
     void SpawnCharacter()
     {
-        int rndEnemy = Random.Range(0, enemyPrefabs.Length);
-        int rndSpawn = Random.Range(0, spawnPoints.Length);
-        Instantiate(enemyPrefabs[rndEnemy], spawnPoints[rndSpawn].position, Quaternion.identity);
+        Instantiate(enemyPrefab, spawnPoint.position, Quaternion.identity);
     }
 }
