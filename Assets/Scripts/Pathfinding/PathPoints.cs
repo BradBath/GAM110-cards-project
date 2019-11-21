@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PathPoints : MonoBehaviour
+public class Pathpoints : MonoBehaviour
 {
 
     public static Transform[] points;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemySpawn : MonoBehaviour
 {
-    public GameObject[] enemiePrefabs;
+    public GameObject[] enemyPrefabs;
     public Transform[] spawnPoints;
 
     public float timeBetweenEnemies = 5f;
@@ -35,8 +35,8 @@ public class EnemySpawn : MonoBehaviour
     //<3 From Christopher with Love
     void SpawnCharacter()
     {
-        int rndEnemy = Random.Range(0, enemiePrefabs.Length);
+        int rndEnemy = Random.Range(0, enemyPrefabs.Length);
         int rndSpawn = Random.Range(0, spawnPoints.Length);
-        Instantiate(enemiePrefabs[rndEnemy], spawnPoints[rndSpawn].position, Quaternion.identity);
+        Instantiate(enemyPrefabs[rndEnemy], spawnPoints[rndSpawn].position, Quaternion.identity);
     }
 }
